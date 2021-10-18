@@ -1,0 +1,47 @@
+
+.DescriptionCard {
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-106%);
+    border-radius: 10px;
+    color: whitesmoke;
+    width:50% !important;
+}
+@media (min-width: 992px){
+    .DescriptionCard {
+        position: absolute;
+        top: -8%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%,-106%);
+        border-radius: 10px;
+        color: whitesmoke;
+        width:50% !important;
+    }
+    }
+    @media (max-width: 768px){
+        .DescriptionCard {
+            position: absolute;
+            top: -8%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%,-106%);
+            border-radius: 10px;
+            color: whitesmoke;
+            width:70% !important;
+        }
+    }
+    @media (max-width: 576px){
+        .DescriptionCard {
+            position: absolute;
+            top: -8%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%,-106%);
+            border-radius: 10px;
+            color: whitesmoke;
+            width:80% !important;
+        }
+    }

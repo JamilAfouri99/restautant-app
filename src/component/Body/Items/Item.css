@@ -1,0 +1,18 @@
+.item-menu{
+    padding: 0.5rem;
+}
+button:disabled{
+    background: #9f9f9f;
+    border: none;
+    cursor: auto;
+}
+
+@media (min-width: 992px){
+
+    }
+@media (max-width: 768px){
+
+    }
+@media (max-width: 576px){
+
+    }

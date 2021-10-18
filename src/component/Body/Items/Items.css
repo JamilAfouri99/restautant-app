@@ -1,0 +1,73 @@
+.container-items{
+    width: 70%;
+    padding-right: var(--bs-gutter-x,2rem) !important;
+    padding-left: var(--bs-gutter-x,0.5rem) !important;
+    padding-top: var(--bs-gutter-x,2rem) !important;
+    padding-bottom: var(--bs-gutter-x,1rem) !important;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column !important;
+}
+@media (min-width: 992px){
+    .container-items {
+        width: 70%;
+        padding-right: var(--bs-gutter-x,2rem) !important;
+        padding-left: var(--bs-gutter-x,0.5rem) !important;
+        padding-top: var(--bs-gutter-x,2rem) !important;
+        padding-bottom: var(--bs-gutter-x,1rem) !important;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: whitesmoke;
+        border-radius: 8px;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column !important;
+        }
+    }
+    @media (max-width: 768px){
+    .container-items {
+        width: 70%;
+        padding-right: var(--bs-gutter-x,2rem) !important;
+        padding-left: var(--bs-gutter-x,0.5rem) !important;
+        padding-top: var(--bs-gutter-x,2rem) !important;
+        padding-bottom: var(--bs-gutter-x,1rem) !important;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: whitesmoke;
+        border-radius: 8px;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row !important;
+        }
+    }
+    @media (max-width: 576px){
+    .container-items {
+        width: 70%;
+        padding-right: var(--bs-gutter-x,2rem) !important;
+        padding-left: var(--bs-gutter-x,0.5rem) !important;
+        padding-top: var(--bs-gutter-x,2rem) !important;
+        padding-bottom: var(--bs-gutter-x,1rem) !important;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: whitesmoke;
+        border-radius: 8px;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row !important;
+        }
+    }
+ul{
+    list-style-type: none;
+}
+li{
+    border-bottom: 1px solid #e4e4e4;
+}
+.dangerBtn{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 2rem 1rem;
+}

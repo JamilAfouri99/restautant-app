@@ -1,0 +1,13 @@
+.UpperContent{
+    position: relative;
+}
+card-img, .card-img-top {
+    border-top-left-radius:0;
+    border-top-right-radius: 0;
+}
+.CutPart{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}

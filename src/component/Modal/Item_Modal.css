@@ -1,0 +1,12 @@
+.remove-item{
+    background: none;
+    border: none;
+    outline: none;
+    color: #212529;
+    transition: all 0.2s ease-in-out;
+}
+.remove-item:hover{
+    color: #561700;
+    transform:scale(1.2);
+    transition: all 0.2s ease-in-out;
+}

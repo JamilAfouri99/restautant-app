@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/restautant-app/static/css/main.dd942ed0.chunk.css",
-    "main.js": "/restautant-app/static/js/main.946b3f36.chunk.js",
-    "main.js.map": "/restautant-app/static/js/main.946b3f36.chunk.js.map",
+    "main.js": "/restautant-app/static/js/main.b9dcb609.chunk.js",
+    "main.js.map": "/restautant-app/static/js/main.b9dcb609.chunk.js.map",
     "runtime-main.js": "/restautant-app/static/js/runtime-main.a9323dcc.js",
     "runtime-main.js.map": "/restautant-app/static/js/runtime-main.a9323dcc.js.map",
     "static/js/2.678ef5f9.chunk.js": "/restautant-app/static/js/2.678ef5f9.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.a9323dcc.js",
     "static/js/2.678ef5f9.chunk.js",
     "static/css/main.dd942ed0.chunk.css",
-    "static/js/main.946b3f36.chunk.js"
+    "static/js/main.b9dcb609.chunk.js"
   ]
 }

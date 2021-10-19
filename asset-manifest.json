@@ -1,27 +1,23 @@
 {
   "files": {
-    "main.css": "/restautant-app/static/css/main.dd942ed0.chunk.css",
-    "main.js": "/restautant-app/static/js/main.b9dcb609.chunk.js",
-    "main.js.map": "/restautant-app/static/js/main.b9dcb609.chunk.js.map",
-    "runtime-main.js": "/restautant-app/static/js/runtime-main.a9323dcc.js",
-    "runtime-main.js.map": "/restautant-app/static/js/runtime-main.a9323dcc.js.map",
-    "static/js/2.678ef5f9.chunk.js": "/restautant-app/static/js/2.678ef5f9.chunk.js",
-    "static/js/2.678ef5f9.chunk.js.map": "/restautant-app/static/js/2.678ef5f9.chunk.js.map",
-    "static/js/3.191f84e6.chunk.js": "/restautant-app/static/js/3.191f84e6.chunk.js",
-    "static/js/3.191f84e6.chunk.js.map": "/restautant-app/static/js/3.191f84e6.chunk.js.map",
+    "main.css": "/restautant-app/static/css/main.992b8cf1.chunk.css",
+    "main.js": "/restautant-app/static/js/main.70d00f93.chunk.js",
+    "main.js.map": "/restautant-app/static/js/main.70d00f93.chunk.js.map",
+    "runtime-main.js": "/restautant-app/static/js/runtime-main.70362bcb.js",
+    "runtime-main.js.map": "/restautant-app/static/js/runtime-main.70362bcb.js.map",
+    "static/js/2.1b05f0c3.chunk.js": "/restautant-app/static/js/2.1b05f0c3.chunk.js",
+    "static/js/2.1b05f0c3.chunk.js.map": "/restautant-app/static/js/2.1b05f0c3.chunk.js.map",
+    "static/js/3.69316275.chunk.js": "/restautant-app/static/js/3.69316275.chunk.js",
+    "static/js/3.69316275.chunk.js.map": "/restautant-app/static/js/3.69316275.chunk.js.map",
     "index.html": "/restautant-app/index.html",
-    "static/css/main.dd942ed0.chunk.css.map": "/restautant-app/static/css/main.dd942ed0.chunk.css.map",
-    "static/js/2.678ef5f9.chunk.js.LICENSE.txt": "/restautant-app/static/js/2.678ef5f9.chunk.js.LICENSE.txt",
-    "static/media/burger.fbd59968.jpg": "/restautant-app/static/media/burger.fbd59968.jpg",
-    "static/media/item1.696e9f48.png": "/restautant-app/static/media/item1.696e9f48.png",
-    "static/media/item2.99dbffdb.png": "/restautant-app/static/media/item2.99dbffdb.png",
-    "static/media/item3.8188e9b5.png": "/restautant-app/static/media/item3.8188e9b5.png",
-    "static/media/item4.e4feba76.png": "/restautant-app/static/media/item4.e4feba76.png"
+    "static/css/main.992b8cf1.chunk.css.map": "/restautant-app/static/css/main.992b8cf1.chunk.css.map",
+    "static/js/2.1b05f0c3.chunk.js.LICENSE.txt": "/restautant-app/static/js/2.1b05f0c3.chunk.js.LICENSE.txt",
+    "static/media/burger.fbd59968.jpg": "/restautant-app/static/media/burger.fbd59968.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9323dcc.js",
-    "static/js/2.678ef5f9.chunk.js",
-    "static/css/main.dd942ed0.chunk.css",
-    "static/js/main.b9dcb609.chunk.js"
+    "static/js/runtime-main.70362bcb.js",
+    "static/js/2.1b05f0c3.chunk.js",
+    "static/css/main.992b8cf1.chunk.css",
+    "static/js/main.70d00f93.chunk.js"
   ]
 }

@@ -11,6 +11,7 @@
   background-color: #252525;
   height: 100%;
   width: 100%;
+  min-height: 100vh !important;
 }
 @media (min-width: 992px){
 .container, .container-lg, .container-md, .container-sm {

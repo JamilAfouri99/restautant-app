@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Item.css';
 
 const Item = (props) => {
+	console.log('FROM ITEM',props.data)
 	const [Amount, setAmount] = useState(0)
 	const [Price, setPrice] = useState(props.data.price)
 

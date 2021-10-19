@@ -1,80 +1,79 @@
 import './Body.css'
-import Items from './Items/Items' 
-import DescriptionCard from './FloatCard/DescriptionCard' 
-import img1 from '../../pics/item1.png'
-import img2 from '../../pics/item2.png'
-import img3 from '../../pics/item3.png'
-import img4 from '../../pics/item4.png'
-import React,{useState,useEffect} from 'react'
+import Items from './Items/Items'
+import DescriptionCard from './FloatCard/DescriptionCard'
+import React, { useState, useEffect } from 'react'
 
 
-const Body=(props)=>{
-    const [removeById,setRemoveById]=useState(null);
+const Body = (props) => {
+    const [removeById, setRemoveById] = useState(null);
+    const [newMenu, setNewMenu] = useState([]);
+    const [loading, setLoading] = useState(false);
 
-    const [val1,setval1]=useState(0);
-    const [val2,setval2]=useState(0);
-    const [val3,setval3]=useState(0);
-    const [val4,setval4]=useState(0);
-    const Menu = [
-        {
-            name:'Sushi',
-            descripe:'Finest fish and veggues',
-            price:22.99,
-            url:img1,
-            itemNum:val1,
-            id:1
-        },
-        {
-            name:'Schnitzel',
-            descripe:'A german specialty!',
-            price:16.50,
-            url:img2,
-            itemNum:val2,
-            id:2
-        },
-        {
-            name:'Barbecue Burger',
-            descripe:'Amerucan, raw, meaty',
-            price:12.99,
-            url:img3,
-            itemNum:val3,
-            id:3
-        },
-        {
-            name:'Green Bowl',
-            descripe:'Healthy and green...!',
-            price:18.99,
-            url:img4,
-            itemNum:val4,
-            id:4
+    const [val1, setval1] = useState(0);
+    const [val2, setval2] = useState(0);
+    const [val3, setval3] = useState(0);
+    const [val4, setval4] = useState(0);
+
+    // Start GET data 
+    const handlGetData = async () => {
+        setLoading(true)
+        const valArray = [val1, val2, val3, val4]
+        try {
+            const response = await fetch('https://restaurant-app-127e5-default-rtdb.firebaseio.com/restaurant/Menu.json');
+            if (!response.ok) {
+                throw 'There is an Error occured!'
+            }
+            const data = await response.json();
+            let Menu = []
+            for (let key in data) {
+                Menu.push({
+                    id: data[key].id,
+                    name: data[key].name,
+                    descripe: data[key].descripe,
+                    itemNum: valArray[data[key].id - 1],
+                    price: data[key].price,
+                    url: data[key].url
+                })
+            }
+            setNewMenu(Menu)
+        } catch (error) {
+            console.log('Error', error.message)
         }
-    ]
-    const handleSum=($id,$amount)=>{
-        Menu.filter((item)=>{
-            if(item.id==$id){
-                return $id==1?setval1($amount):$id==2?setval2($amount):$id==3?setval3($amount):$id==4?setval4($amount):0
+        setLoading(false)
+    };
+    // End GET data 
+
+    const handleSum = async ($id, $amount) => {
+        newMenu.filter((item) => {
+            if (item.id == $id) {
+                return $id == 1 ? setval1($amount) : $id == 2 ? setval2($amount) : $id == 3 ? setval3($amount) : $id == 4 ? setval4($amount) : 0
             }
         })
-        let Data=[]
-        let Modal_Data=[]
-        Menu.map((item)=>{
+        let Data = []
+        let Modal_Data = []
+        newMenu.map((item) => {
             Data.push(item.itemNum);
             item.itemNum > 0 && Modal_Data.push(item)
         })
         props.DATA(Data.reduce((a, b) => a + b, 0))
         props.Modal_Data(Modal_Data)
     }
-    
-    useEffect(()=>{
-            props.RemoveByID==1?setval1(0):props.RemoveByID==2?setval2(0):props.RemoveByID==3?setval3(0):props.RemoveByID==4?setval4(0):0;
-            // props.removeByID=null
-            return setRemoveById(Menu[props.RemoveByID-1])
-        },[props.RemoveByID])
-        
-        return(
-            <div className='Body container'>
-            <DescriptionCard/>
-            <Items items={Menu} DATA={handleSum} RemoveById={removeById}/>
+
+    useEffect(() => {
+        props.RemoveByID == 1 ? setval1(0) : props.RemoveByID == 2 ? setval2(0) : props.RemoveByID == 3 ? setval3(0) : props.RemoveByID == 4 ? setval4(0) : 0;
+        if (newMenu?.length > 0) {
+            setRemoveById(newMenu[props.RemoveByID - 1])
+        }
+    }, [props.RemoveByID]);
+    useEffect(() => {
+        handlGetData()
+    }, [])
+
+
+    return (
+        <div className='Body container'>
+            <DescriptionCard />
+            <Items items={newMenu} DATA={handleSum} RemoveById={removeById} loading={loading}/>
         </div>
     )
 }
